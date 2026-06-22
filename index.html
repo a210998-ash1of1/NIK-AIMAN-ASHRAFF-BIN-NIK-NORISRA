@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIK AIMAN ASHRAFF BIN NIK NORISRA - ePortfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f9fdf9;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #2e7d32;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background: #388e3c;
+      display: flex;
+      justify-content: center;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 1rem;
+      display: block;
+    }
+    nav a:hover {
+      background: #2e7d32;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #2e7d32;
+      margin-top: 0;
+    }
+    .card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    iframe {
+      width: 100%;
+      height: 315px;
+      border: none;
+      border-radius: 8px;
+    }
+    .github-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background: #2e7d32;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    .github-btn:hover {
+      background: #1b5e20;
+    }
+    footer {
+      background: #388e3c;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    @media (max-width: 600px) {
+      iframe {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NIK AIMAN ASHRAFF BIN NIK NORISRA</h1>
+    <p>Matric No: A210998 | Programme: 1IT1 | Instructor: DR. RIMANIZA</p>
+  </header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#labs">Labs</a>
+    <a href="#projects">Projects</a>
+    <a href="#reflection">Reflection</a>
+    <a href="#skills">Skills</a>
+    <a href="#resources">Resources</a>
+  </nav>
+
+  <section id="home">
+    <h2>Home</h2>
+    <p><strong>Introduction:</strong> Jalan Jalan is a trip planning mobile application built for SDG 11: Sustainable Cities and Communities, designed to help users navigate and plan trips around Kuala Lumpur, Melaka, and Batu Pahat. The app combines real-time GPS location, live weather data, local trip history, and a community trip-sharing feature, allowing users to plan smarter, more informed journeys. Built with Jetpack Compose, it integrates four core technologies — Room database for local storage, Firebase Firestore for cloud sharing, Retrofit for live weather data, and GPS sensor hardware for location detection.</p>
+    <p><strong>SDG:</strong> SDG 11 + sustainable cities and communities, because building smarter mobility and resilient infrastructure helps reduce congestion, pollution, and improve urban living quality.</p>
+  </section>
+
+  <section id="labs">
+    <h2>Labs</h2>
+    <div class="card">
+      <h3>Lab 1 (UI)</h3>
+      <p>I learned how to design a basic user interface using Jetpack Compose. It was simple to arrange components, but ensuring proper alignment and spacing required careful attention.</p>
+      <iframe src="https://www.youtube.com/embed/UmOvTqDElog" title="Lab 1 UI Video"></iframe>
+    </div>
+    <div class="card">
+      <h3>Lab 2 (Interaction)</h3>
+      <p>This lab taught me how to add user interaction such as buttons and input fields. It was easy to trigger actions, but handling state changes correctly was a bit challenging.</p>
+      <iframe src="https://www.youtube.com/embed/H2pE0empwDI" title="Lab 2 Interaction Video"></iframe>
+    </div>
+    <div class="card">
+      <h3>Lab 3 (Material Design)</h3>
+      <p>I understood how Material Design principles improve UI consistency. Applying styles was straightforward, but balancing design rules with creativity took some effort.</p>
+      <iframe src="https://www.youtube.com/embed/-eDuLtZZK7c" title="Lab 3 Material Design Video"></iframe>
+    </div>
+    <div class="card">
+      <h3>Lab 4 (Navigation)</h3>
+      <p>I learned how to implement navigation between multiple screens. Setting up the NavHost was manageable, but ensuring smooth back navigation required extra debugging.</p>
+      <iframe src="https://www.youtube.com/embed/F42GbI72LGE" title="Lab 4 Navigation Video"></iframe>
+    </div>
+    <div class="card">
+      <h3>Lab 5 (Room)</h3>
+      <p>This lab introduced persistent storage with Room Database. Saving and retrieving data worked well, but connecting the DAO, Repository, and ViewModel correctly was the most important challenge I overcame.</p>
+      <iframe src="https://www.youtube.com/embed/nbetwcqL9Fs" title="Lab 5 Room Video"></iframe>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>Project 1 (Lab 4 + Working Features)</h3>
+      <p><strong>App Name:</strong> JALAN JALAN</p>
+      <p><strong>Problem Statement:</strong> Modern mobile apps need to store data permanently so that information is not lost when the app is closed, but using only a ViewModel is not enough because ViewModel data is stored in memory and disappears once the app is destroyed. This project addresses that gap by integrating a Room database into the Jalan-Jalan trip planner app to enable persistent data storage.</p>
+      <iframe src="https://www.youtube.com/embed/WKHv0Y_O9YY" title="Project 1 Video"></iframe>
+      <p>Through this project, I learned how the Entity, DAO, Database, Repository, and ViewModel components work together in the MVVM + Repository + Room architecture to manage data flow cleanly. I also learned the importance of using Flow and StateFlow so the UI updates automatically whenever the underlying database changes, without needing manual refresh logic. Lastly, I understood the Singleton pattern's role in ensuring only one database instance exists, which prevents conflicts and keeps the app's data layer efficient and thread-safe.</p>
+      <a href="https://drive.google.com/drive/folders/1S4_8YWW51BAF8losOWHIoLkihcEk_Qpv?usp=sharing" class="github-btn">View on GitHub</a>
+    </div>
+    <div class="card">
+      <h3>Project 2 (Lab 5 + API + Sensors + Cloud)</h3>
+      <p><strong>App Name:</strong> JALAN JALAN</p>
+      <p><strong>Problem Statement:</strong> Many Malaysians struggle with planning urban trips efficiently — without easy access to live weather conditions, real-time location tracking, and a way to learn from other travelers' routes, trip planning becomes inconvenient and uninformed. Jalan Jalan addresses this by integrating GPS, live weather data, and community-shared trips into a single, connected platform.</p>
+      <iframe src="https://www.youtube.com/embed/9Ew3wyj3KlA" title="Project 2 Video"></iframe>
+      <p>Building Project 2 taught me how to connect multiple data sources — local, cloud, and live internet APIs — into a single cohesive app using ViewModel and StateFlow. I learned that handling asynchronous operations like GPS and network calls requires careful state management (Loading/Success/Error) to avoid crashes and give users clear feedback. I also learned the importance of fallback handling — for example, defaulting to a safe location when GPS fails — to keep the app stable under real-world conditions.</p>
+      <a href="https://drive.google.com/file/d/1t0HMcMh7yK2p4FqS8JeLJZFJXgA1lApf/view?usp=sharing" class="github-btn">View on GitHub</a>
+    </div>
+  </section>
+
+  <section id="reflection">
+    <h2>Reflection & Learning Journey</h2>
+    <p>From Lab 1 to Project 2, my understanding of Android development grew from simply building static UI
